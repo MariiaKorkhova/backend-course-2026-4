@@ -13,8 +13,16 @@
   "license": "ISC",
   "author": "",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon main.js --input titanic.json --host localhost -p 8000"
+  },
+  "dependencies": {
+    "commander": "^14.0.3",
+    "fast-xml-parser": "^5.5.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
   }
 }
